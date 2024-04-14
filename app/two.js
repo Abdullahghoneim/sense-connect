@@ -71,6 +71,18 @@ export default function One() {
                 resizeMode={ResizeMode.CONTAIN}
                 onPlaybackStatusUpdate={(status) => setStatus(() => status)}
               />
+            ) : srcVideo === "4" ? (
+              <Video
+                style={{
+                  width: 500,
+                  height: 500,
+                }}
+                ref={video}
+                source={require("../assets/WhatsApp Video 2024-04-14 at 6.28.54 PM.mp4")}
+                useNativeControls
+                resizeMode={ResizeMode.CONTAIN}
+                onPlaybackStatusUpdate={(status) => setStatus(() => status)}
+              />
             ) : null}
           </View>
         </View>
@@ -120,6 +132,17 @@ export default function One() {
           <Image
             style={{ width: 400, height: 500, borderRadius: 10, marginTop: 10 }}
             source={require("../assets/WhatsApp Image 2024-04-14 at 5.24.49 PM (2).jpeg")}
+          />
+        </Pressable>
+        <Pressable
+          onPress={() => {
+            setShowModal(true);
+            setVideo("4");
+          }}
+        >
+          <Image
+            style={{ width: 400, height: 500, borderRadius: 10, marginTop: 10 }}
+            source={require("../assets/images/WhatsApp Image 2024-04-14 at 6.29.11 PM.jpeg")}
           />
         </Pressable>
       </View>
