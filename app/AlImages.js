@@ -84,10 +84,16 @@ export default function AlImages() {
           >
             معمل حاسب الي
           </Text>
-          <Image
-            style={{ width: 300, height: 300 }}
-            source={require("../assets/images/WhatsApp Image 2024-04-13 at 8.42.14 PM (2).jpeg")}
-          />
+          <Pressable
+            onPress={() => {
+              router.push("/for");
+            }}
+          >
+            <Image
+              style={{ width: 300, height: 300 }}
+              source={require("../assets/images/WhatsApp Image 2024-04-13 at 8.42.14 PM (2).jpeg")}
+            />
+          </Pressable>
         </View>
 
         <View style={{ marginTop: 10 }}>

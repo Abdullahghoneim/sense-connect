@@ -94,9 +94,58 @@ export default function One() {
         >
           <Image
             style={{ width: 400, height: 700, borderRadius: 10, marginTop: 10 }}
+            source={require("../assets/images/WhatsApp Image 2024-04-14 at 5.46.29 PM (1).jpeg")}
+          />
+        </Pressable>
+        <Pressable
+          onPress={() => {
+            setShowModal(true);
+            setVideo("3");
+          }}
+        >
+          <Image
+            style={{ width: 400, height: 700, borderRadius: 10, marginTop: 10 }}
             source={require("../assets/images/WhatsApp Image 2024-04-14 at 5.46.29 PM.jpeg")}
           />
         </Pressable>
+
+        <Pressable
+          onPress={() => {
+            setShowModal(true);
+            setVideo("3");
+          }}
+        >
+          <Image
+            style={{ width: 400, height: 700, borderRadius: 10, marginTop: 10 }}
+            source={require("../assets/images/WhatsApp Image 2024-04-14 at 5.46.30 PM.jpeg")}
+          />
+        </Pressable>
+
+        <Pressable
+          onPress={() => {
+            setShowModal(true);
+            setVideo("3");
+          }}
+        >
+          <Image
+            style={{ width: 400, height: 700, borderRadius: 10, marginTop: 10 }}
+            source={require("../assets/images/WhatsApp Image 2024-04-14 at 5.46.30 PM (1).jpeg")}
+          />
+        </Pressable>
+
+
+        <Pressable
+          onPress={() => {
+            setShowModal(true);
+            setVideo("3");
+          }}
+        >
+          <Image
+            style={{ width: 400, height: 700, borderRadius: 10, marginTop: 10 }}
+            source={require("../assets/images/WhatsApp Image 2024-04-14 at 5.46.30 PM (2).jpeg")}
+          />
+        </Pressable>
+
       </View>
     </ScrollView>
   );
