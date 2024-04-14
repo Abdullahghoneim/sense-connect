@@ -42,7 +42,7 @@ export default function One() {
                   height: 500,
                 }}
                 ref={video}
-                source={require("../assets/WhatsApp Video 2024-04-14 at 5.31.20 PM.mp4")}
+                source={require("../assets/WhatsApp Video 2024-04-14 at 6.35.48 PM.mp4")}
                 useNativeControls
                 resizeMode={ResizeMode.CONTAIN}
                 onPlaybackStatusUpdate={(status) => setStatus(() => status)}
@@ -54,7 +54,7 @@ export default function One() {
                   height: 500,
                 }}
                 ref={video}
-                source={require("../assets/WhatsApp Video 2024-04-14 at 5.30.28 PM.mp4")}
+                source={require("../assets/WhatsApp Video 2024-04-14 at 6.36.02 PM.mp4")}
                 useNativeControls
                 resizeMode={ResizeMode.CONTAIN}
                 onPlaybackStatusUpdate={(status) => setStatus(() => status)}
