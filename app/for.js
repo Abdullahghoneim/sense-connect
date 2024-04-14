@@ -42,7 +42,7 @@ export default function One() {
                   height: 500,
                 }}
                 ref={video}
-                source={require("../assets/WhatsApp Video 2024-04-14 at 5.31.20 PM.mp4")}
+                source={require("../assets/WhatsApp Video 2024-04-14 at 5.50.50 PM.mp4")}
                 useNativeControls
                 resizeMode={ResizeMode.CONTAIN}
                 onPlaybackStatusUpdate={(status) => setStatus(() => status)}
@@ -54,7 +54,55 @@ export default function One() {
                   height: 500,
                 }}
                 ref={video}
-                source={require("../assets/WhatsApp Video 2024-04-14 at 5.30.28 PM.mp4")}
+                source={require("../assets/WhatsApp Video 2024-04-14 at 5.50.50 PM.mp4")}
+                useNativeControls
+                resizeMode={ResizeMode.CONTAIN}
+                onPlaybackStatusUpdate={(status) => setStatus(() => status)}
+              />
+            ) : srcVideo === "3" ? (
+              <Video
+                style={{
+                  width: 500,
+                  height: 500,
+                }}
+                ref={video}
+                source={require("../assets/WhatsApp Video 2024-04-14 at 5.50.50 PM.mp4")}
+                useNativeControls
+                resizeMode={ResizeMode.CONTAIN}
+                onPlaybackStatusUpdate={(status) => setStatus(() => status)}
+              />
+            ) : srcVideo === "4" ? (
+              <Video
+                style={{
+                  width: 500,
+                  height: 500,
+                }}
+                ref={video}
+                source={require("../assets/WhatsApp Video 2024-04-14 at 5.51.37 PM.mp4")}
+                useNativeControls
+                resizeMode={ResizeMode.CONTAIN}
+                onPlaybackStatusUpdate={(status) => setStatus(() => status)}
+              />
+            ) : srcVideo === "5" ? (
+              <Video
+                style={{
+                  width: 500,
+                  height: 500,
+                }}
+                ref={video}
+                source={require("../assets/WhatsApp Video 2024-04-14 at 5.52.25 PM.mp4")}
+                useNativeControls
+                resizeMode={ResizeMode.CONTAIN}
+                onPlaybackStatusUpdate={(status) => setStatus(() => status)}
+              />
+            ) : srcVideo === "6" ? (
+              <Video
+                style={{
+                  width: 500,
+                  height: 500,
+                }}
+                ref={video}
+                source={require("../assets/WhatsApp Video 2024-04-14 at 5.53.00 PM.mp4")}
                 useNativeControls
                 resizeMode={ResizeMode.CONTAIN}
                 onPlaybackStatusUpdate={(status) => setStatus(() => status)}
@@ -133,7 +181,6 @@ export default function One() {
           />
         </Pressable>
 
-
         <Pressable
           onPress={() => {
             setShowModal(true);
@@ -145,7 +192,6 @@ export default function One() {
             source={require("../assets/images/WhatsApp Image 2024-04-14 at 5.46.30 PM (2).jpeg")}
           />
         </Pressable>
-
       </View>
     </ScrollView>
   );
