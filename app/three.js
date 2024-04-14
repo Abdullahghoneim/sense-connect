@@ -59,18 +59,6 @@ export default function One() {
                 resizeMode={ResizeMode.CONTAIN}
                 onPlaybackStatusUpdate={(status) => setStatus(() => status)}
               />
-            ) : srcVideo === "3" ? (
-              <Video
-                style={{
-                  width: 500,
-                  height: 500,
-                }}
-                ref={video}
-                source={require("../assets/WhatsApp Video 2024-04-14 at 5.31.20 PM.mp4")}
-                useNativeControls
-                resizeMode={ResizeMode.CONTAIN}
-                onPlaybackStatusUpdate={(status) => setStatus(() => status)}
-              />
             ) : null}
           </View>
         </View>
@@ -84,21 +72,9 @@ export default function One() {
         >
           <Image
             style={{ width: 400, height: 500, borderRadius: 10 }}
-            source={require("../assets/WhatsApp Image 2024-04-14 at 5.24.49 PM.jpeg")}
+            source={require("../assets/images/WhatsApp Image 2024-04-14 at 5.39.15 PM.jpeg")}
           />
         </Pressable>
-        {/* <Pressable
-          onPress={() => {
-            setShowModal(true);
-            setVideo("1");
-          }}
-        >
-          <Image
-            style={{ width: 400, height: 500, borderRadius: 10, marginTop: 10 }}
-            source={require("../assets/images/WhatsApp Image 2024-04-13 at 9.04.50 PM.jpeg")}
-          />
-        </Pressable> */}
-
         <Pressable
           onPress={() => {
             setShowModal(true);
@@ -106,20 +82,8 @@ export default function One() {
           }}
         >
           <Image
-            style={{ width: 400, height: 400, borderRadius: 10, marginTop: 10 }}
-            source={require("../assets/WhatsApp Image 2024-04-14 at 5.24.49 PM (1).jpeg")}
-          />
-        </Pressable>
-
-        <Pressable
-          onPress={() => {
-            setShowModal(true);
-            setVideo("3");
-          }}
-        >
-          <Image
-            style={{ width: 400, height: 500, borderRadius: 10, marginTop: 10 }}
-            source={require("../assets/WhatsApp Image 2024-04-14 at 5.24.49 PM (2).jpeg")}
+            style={{ width: 400, height: 700, borderRadius: 10, marginTop: 10 }}
+            source={require("../assets/images/WhatsApp Image 2024-04-14 at 5.39.16 PM.jpeg")}
           />
         </Pressable>
       </View>
