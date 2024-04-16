@@ -1,13 +1,7 @@
 import React from "react";
-import {
-  Image,
-  View,
-  TouchableOpacity,
-  StyleSheet,
-  Pressable,
-  Text,
-} from "react-native";
-import { Link } from "expo-router";
+import { Image, View, StyleSheet, Pressable, Text } from "react-native";
+import { router } from "expo-router";
+
 export default function Home() {
   const handleImageClick = () => {
     console.log("Image Clicked");
@@ -25,10 +19,17 @@ export default function Home() {
       <Text style={{ fontSize: 20, padding: 5 }}>
         مشروع التخرج ٢٠٢٤ الفرقة الرابعة تكنولوجيا التعليم الشعبة العامة
       </Text>
-      <Image
-        style={styles.image}
-        source={require("../../assets/images/WhatsApp Image 2024-04-13 at 7.55.08 PM.jpeg")}
-      />
+      <Pressable
+        onPress={() => {
+          // "/mainBuilding"
+          router.push("/mainBuilding");
+        }}
+      >
+        <Image
+          style={styles.image}
+          source={require("../../assets/images/WhatsApp Image 2024-04-13 at 7.55.08 PM.jpeg")}
+        />
+      </Pressable>
       {/* </Link> */}
     </View>
   );
